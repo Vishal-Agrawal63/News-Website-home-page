@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-text-color: #183b56;
+	--secondary-text-color: #577592;
+	--accent-color: #2294ed;
+	--accent-color-dark: #1d69a3;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	color: var(--primary-text-color);
+}
+
+p {
+	font-family: "Roboto", sans-serif;
+	color: var(--secondary-text-color);
+}
+
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+/* utility classes */
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.container {
+	max-width: 1180px;
+	margin-inline: auto;
+	overflow: hidden;
+}
+
+nav {
+	background-color: #f3faff;
+	box-shadow: 0 0 4px #bbe0e2;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	left: 0;
+	right: 0;
+}
+
+.hover-link {
+	color: var(--primary-text-color);
+	transition: 0.2s ease-out;
+	cursor: pointer;
+}
+.hover-link:hover {
+	color: var(--accent-color);
+}
+.hover-link:active {
+	color: red;
+}
+
+.primary-button {
+	color: white !important;
+	background-color: var(--accent-color);
+	padding: 10px 24px;
+	border-radius: 8px;
+	font-weight: 700;
+	transition: 0.2s ease-out;
+	cursor: pointer;
+	font-family: "Roboto", sans-serif;
+}
+.primary-button:hover {
+	background-color: var(--accent-color-dark);
+}
+
+/* Nav-bar */
+
+.main-nav {
+	/* background-color: var(--accent-color); */
+	justify-content: space-between;
+	padding: 8px 0;
+}
+
+.company-logo img {
+	width: 50px;
+}
+
+.nav-links ul {
+	gap: 20px;
+}
+
+.search-bar {
+	gap: 10px;
+	height: 32px;
+}
+.news-input {
+	font-family: "Roboto", sans-serif;
+	height: 100%;
+	width: 300px;
+	padding-inline: 12px;
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+/* main */
+
+main {
+	padding-block: 20px;
+	margin-top: 80px;
+}
+
+.cards-container {
+	/* flex-direction: column;
+	max-width: 400px; */
+	flex-wrap: wrap;
+	row-gap: 20px;
+	align-items: start;
+	justify-content: space-between;
+}
+
+.card {
+	width: 360px;
+	box-shadow: 0 0 4px #d4ecff;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #fff;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.card:hover {
+	box-shadow: 1px 1px 8px #d4ecff;
+	background-color: #f9fdff;
+	transform: translateY(-2px);
+}
+
+.card-header img {
+	height: 180px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.card-content {
+	padding: 12px;
+}
+
+/* footer */
+
+.main-footer {
+	justify-content: space-between;
+	padding: 8px 0;
+	background-color: #d4ecff;
+	width: 100vw;
+}
+
+.footer-links ul {
+	gap: 20px;
+	justify-content: center;
+	margin: auto;
+	align-items: center;
+}
